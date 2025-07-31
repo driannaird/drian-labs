@@ -8,7 +8,7 @@ Panduan ini akan membantu Anda mengatur Nginx sebagai reverse proxy untuk aplika
 
 ---
 
-## 📁 1. Buat File Konfigurasi Nginx
+## 1. Buat File Konfigurasi Nginx
 
 Buat file baru di direktori konfigurasi Nginx (`/etc/nginx/sites-available`):
 
@@ -18,7 +18,7 @@ sudo nano /etc/nginx/sites-available/your-domain.com
 
 Ganti `your-domain.com` dengan domain Anda (misalnya `example.com`).
 
-## 📝 2. Tambahkan Konfigurasi Reverse Proxy
+## 2. Tambahkan Konfigurasi Reverse Proxy
 
 Contoh konfigurasi dasar:
 
@@ -43,7 +43,7 @@ Keterangan:
 - Ganti `PORT` dengan port aplikasi utama (misalnya Next.js: `4000`).
 - Anda bisa menambahkan lebih banyak location sesuai kebutuhan.
 
-## 🔗 3. Aktifkan Konfigurasi
+## 3. Aktifkan Konfigurasi
 
 Aktifkan konfigurasi dengan membuat symbolic link ke `sites-enabled`:
 
@@ -51,7 +51,7 @@ Aktifkan konfigurasi dengan membuat symbolic link ke `sites-enabled`:
 sudo ln -s /etc/nginx/sites-available/your-domain.com /etc/nginx/sites-enabled/
 ```
 
-### ✅ 4. Cek Konfigurasi
+## 4. Cek Konfigurasi
 
 Periksa apakah konfigurasi valid:
 
@@ -61,7 +61,7 @@ sudo nginx -t
 
 Jika hasilnya `syntax is ok` dan `test is successful`, lanjutkan.
 
-## 🔄 5. Reload Nginx
+## 5. Reload Nginx
 
 Reload Nginx agar perubahan diterapkan:
 

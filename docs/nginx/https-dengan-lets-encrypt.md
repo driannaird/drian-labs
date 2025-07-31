@@ -8,7 +8,7 @@ Panduan ini akan membantu Anda mengamankan website Anda dengan HTTPS secara **gr
 
 ---
 
-## ✅ Prasyarat
+## Prasyarat
 
 Pastikan Anda sudah memiliki:
 
@@ -18,7 +18,7 @@ Pastikan Anda sudah memiliki:
 
 ---
 
-## 📦 1. Install Certbot dan Plugin Nginx
+## 1. Install Certbot dan Plugin Nginx
 
 Untuk Ubuntu/Debian:
 
@@ -27,7 +27,7 @@ sudo apt update
 sudo apt install certbot python3-certbot-nginx
 ```
 
-## 🌐 2. Pastikan Domain Aktif dan Arah ke Server
+## 2. Pastikan Domain Aktif dan Arah ke Server
 
 Gunakan perintah berikut untuk mengecek apakah domain mengarah ke server:
 
@@ -36,7 +36,7 @@ ping your-domain.com
 Jika IP yang muncul adalah IP server Anda, berarti domain sudah siap.
 ```
 
-## 🔧 3. Jalankan Certbot untuk Nginx
+## 3. Jalankan Certbot untuk Nginx
 
 Gunakan perintah berikut untuk mengatur HTTPS secara otomatis:
 
@@ -49,14 +49,14 @@ Saat diminta:
 - Pilih apakah ingin redirect semua HTTP ke HTTPS (opsi ini direkomendasikan).
 - Certbot akan mengedit file konfigurasi Nginx Anda dan menambahkan blok SSL secara otomatis.
 
-## ✅ 4. Verifikasi HTTPS Aktif
+## 4. Verifikasi HTTPS Aktif
 
 Akses domain Anda di browser dengan https://your-domain.com. Pastikan:
 
 - Tidak ada peringatan SSL.
 - Ikon gembok muncul di address bar.
 
-## 🔄 5. Perpanjangan Otomatis
+## 5. Perpanjangan Otomatis
 
 Let's Encrypt hanya berlaku selama 90 hari, tapi Certbot akan mengatur perpanjangan otomatis.
 
@@ -76,7 +76,7 @@ Jika tidak ada error, artinya sistem perpanjangan otomatis bekerja dengan baik.
 
 ---
 
-## 🛠️ Troubleshooting Umum
+## Troubleshooting Umum
 
 | Masalah                   | Solusi                                                 |
 | ------------------------- | ------------------------------------------------------ |
@@ -86,7 +86,7 @@ Jika tidak ada error, artinya sistem perpanjangan otomatis bekerja dengan baik.
 
 ---
 
-## 🧼 Optional: Hapus SSL
+## Optional: Hapus SSL
 
 Jika Anda ingin menghapus HTTPS:
 
@@ -106,6 +106,6 @@ sudo systemctl reload nginx
 
 ---
 
-## 🎉 Selesai!
+## Selesai!
 
 Website Anda sekarang sudah **aman dengan HTTPS** gratis dari Let’s Encrypt menggunakan Nginx dan Certbot.
