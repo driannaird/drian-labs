@@ -9,127 +9,110 @@ authors:
 tags: [devops]
 ---
 
-# Catatan Lengkap DevOps: Rangkuman Mudah Dipahami dan Diingat
+### **1. Pengantar DevOps**
 
-## Apa Itu DevOps?
+DevOps adalah pendekatan dalam pengembangan perangkat lunak yang menyatukan tim **Development** (pengembang) dan **Operations** (operasional) untuk meningkatkan kolaborasi, automasi, dan efisiensi dalam siklus hidup aplikasi—mulai dari pengembangan, pengujian, rilis, hingga pemantauan. Tujuan utamanya adalah menciptakan sistem yang tangguh, stabil, dan mampu beradaptasi dengan cepat terhadap kebutuhan pengguna.
 
-DevOps adalah gabungan dari dua kata: **Development** (pengembangan) dan **Operations** (operasi). Ini bukan sekadar alat atau teknologi, melainkan **budaya kerja dan pendekatan kolaboratif** yang bertujuan untuk mempercepat proses pengembangan perangkat lunak, meningkatkan kualitas, dan mempercepat waktu ke pasar (time to market).
+### **2. Tiga Prinsip Utama DevOps**
 
-DevOps mendorong otomatisasi dan integrasi berkelanjutan dari seluruh proses, mulai dari perencanaan, pengembangan, pengujian, hingga deployment dan pemantauan aplikasi.
+DevOps dibangun di atas tiga prinsip utama yang disebut sebagai **The Three Ways**:
 
-## Tahapan dalam DevOps Pipeline
+- **The First Way: Flow**
+  Fokus pada alur kerja yang lancar dari Development ke Operations ke Customer. Tujuannya adalah mempercepat proses delivery dari ide menjadi fitur yang bisa digunakan pengguna.
 
-DevOps pipeline adalah alur kerja otomatis yang menghubungkan seluruh proses pengembangan hingga rilis ke pengguna akhir. Berikut tahapan utamanya:
+- **The Second Way: Feedback**
+  Menekankan pentingnya umpan balik yang cepat dan terus-menerus. Feedback dari customer, sistem, maupun anggota tim digunakan untuk perbaikan berkelanjutan.
 
-1. **Plan**
-   Merencanakan fitur, perbaikan bug, atau pembaruan berdasarkan kebutuhan pengguna atau bisnis.
+- **The Third Way: Continual Learning and Experimentation**
+  Mendukung budaya pembelajaran berkelanjutan dan eksperimen. Kegagalan dianggap sebagai peluang belajar, dan inovasi terus didorong.
 
-2. **Develop**
-   Menulis dan mengelola kode menggunakan sistem version control seperti Git.
+### **3. CALMS Framework**
 
-3. **Build**
-   Mengubah source code menjadi bentuk siap digunakan (seperti file binary, container image, atau artifact lainnya).
+CALMS adalah kerangka kerja untuk menilai kesiapan dan implementasi DevOps, yang terdiri dari lima pilar:
 
-4. **Test**
-   Melakukan pengujian otomatis untuk memastikan tidak ada bug atau error.
+- **Culture**: Budaya kolaboratif, tidak menyalahkan.
+- **Automation**: Automasi proses untuk efisiensi dan kecepatan.
+- **Lean**: Fokus pada peningkatan berkelanjutan dan efisiensi.
+- **Measurement**: Pengukuran metrik kinerja seperti waktu deploy dan tingkat bug.
+- **Sharing**: Berbagi pengetahuan dan praktik baik antar tim.
 
-5. **Release**
-   Menyusun dan mempersiapkan paket rilis agar dapat digunakan tim deployment.
+CALMS pertama kali diperkenalkan oleh **Damon Edwards** dan **John Willis**.
 
-6. **Deploy**
-   Mengirimkan aplikasi ke server atau platform produksi agar bisa diakses oleh pengguna.
+### **4. DevOps Pipeline**
 
-7. **Operate and Monitor**
-   Memantau performa aplikasi setelah digunakan oleh pengguna, serta mengumpulkan log dan metrik untuk evaluasi.
+DevOps Pipeline adalah **serangkaian proses dan tools otomatis** yang menghubungkan developer dan tim operasional untuk memastikan bahwa perubahan kode dapat diuji, dibangun, dan di-deploy secara aman ke lingkungan produksi. Pipeline ini mencakup tahapan seperti:
 
-## Apa Itu Build?
+- **Continuous Integration (CI)**
+  Praktik menggabungkan perubahan kode secara berkala ke repositori pusat dan melakukan pengujian otomatis. Hal ini mencegah konflik integrasi yang kompleks.
 
-Build adalah proses mengonversi source code menjadi format executable atau artifact yang bisa dijalankan. Misalnya, meng-compile file kode menjadi file `.jar`, `.exe`, atau container image. Proses build biasanya otomatis dan terintegrasi dalam pipeline.
+- **Build**
+  Proses mengubah source code dan aset lainnya menjadi artefak (file hasil build) yang siap di-deploy. Contohnya adalah file `.jar`, `.zip`, atau image Docker.
 
-Contoh tool build dari AWS: **AWS CodeBuild**
-Tool ini bertugas melakukan compile, testing, dan menghasilkan artifact siap rilis.
+- **Test**
+  Tahapan pengujian otomatis (unit, integration, end-to-end) untuk memastikan aplikasi bekerja sesuai ekspektasi.
 
-## Apa Itu Continuous Integration dan Continuous Delivery (CI/CD)?
+- **Deploy**
+  Tahap di mana artefak aplikasi dikirim ke server production atau staging.
 
-**Continuous Integration (CI)** adalah praktik di mana developer secara rutin menggabungkan (merge) kode mereka ke repositori utama. Tujuannya adalah:
+- **Monitor**
+  Aplikasi dipantau untuk mendeteksi error atau kejanggalan, sekaligus memberikan feedback kepada tim.
 
-- Menghindari konflik kode
-- Mendeteksi error lebih cepat
-- Memastikan integrasi stabil
+### **5. Tools DevOps Populer**
 
-**Continuous Delivery (CD)** adalah kelanjutan dari CI, di mana sistem secara otomatis:
+Berikut beberapa tools yang umum digunakan dalam proses DevOps:
 
-- Mengemas kode menjadi artifact
-- Menyimpannya
-- Menyiapkannya untuk bisa dirilis ke produksi kapan saja
+#### **Continuous Integration / Build Tools**
 
-Dalam praktik yang lebih maju, **Continuous Deployment** akan langsung mengirimkan aplikasi ke produksi secara otomatis setelah build dan test berhasil.
+- **Jenkins**: Otomatisasi CI/CD yang populer dan open-source.
+- **AWS CodeBuild**: Layanan AWS untuk build otomatis, pengujian, dan produksi artefak.
+- **GitHub Actions**: Menjalankan CI/CD workflows langsung dari repositori GitHub.
 
-## Tiga Prinsip Utama DevOps (The Three Ways)
+#### **Version Control**
 
-### 1. The First Way: Alur Kerja yang Efisien
+- **Git**: Sistem kontrol versi terdistribusi.
+- **GitHub / GitLab / Bitbucket**: Layanan repositori Git yang mendukung kolaborasi dan integrasi dengan pipeline CI/CD.
 
-Fokus pada efisiensi alur kerja dari pengembangan hingga ke pengguna. Beberapa hal yang dilakukan:
+#### **Configuration & Deployment**
 
-- Identifikasi bottleneck
-- Kurangi proses yang tidak perlu
-- Automasi proses build dan deployment
-- Gunakan visualisasi seperti Kanban Board
+- **Docker**: Mengemas aplikasi dalam container untuk memastikan konsistensi di berbagai lingkungan.
+- **Kubernetes**: Orkestrasi container dalam skala besar.
+- **Terraform**: Infrastructure as Code (IaC) untuk provisioning dan manajemen infrastruktur.
 
-### 2. The Second Way: Umpan Balik Cepat
+#### **Monitoring & Logging**
 
-Menekankan pentingnya feedback dari sistem ke developer secara cepat dan jelas. Contohnya:
+- **Prometheus + Grafana**: Pemantauan dan visualisasi metrik sistem.
+- **ELK Stack (Elasticsearch, Logstash, Kibana)**: Analisis log.
+- **AWS CloudWatch**: Monitoring dan alerting dari AWS.
 
-- Monitoring real-time
-- Alert otomatis
-- Review log error dan metrik performa
-- Mekanisme rollback jika gagal deploy
+#### **Serverless**
 
-### 3. The Third Way: Pembelajaran dan Eksperimen Berkelanjutan
+- **AWS Lambda**: Menjalankan fungsi kecil tanpa mengelola server. Kode hanya berjalan saat dipanggil.
 
-Mendorong budaya pembelajaran, perbaikan, dan eksperimen. Hal ini bisa dilakukan melalui:
+### **6. Pentingnya Monitoring**
 
-- Retrospektif rutin
-- Eksperimen kecil pada sistem produksi
-- Evaluasi dan peningkatan berkelanjutan
+Monitoring sejak tahap development hingga produksi membantu tim:
 
-## Framework CALMS
+- Mendeteksi bug secara dini.
+- Meningkatkan kepercayaan diri saat melakukan deploy.
+- Mempercepat feedback loop.
+- Memberikan wawasan nyata terhadap perilaku aplikasi di lingkungan pengguna.
 
-CALMS adalah kerangka untuk menilai kesiapan organisasi dalam mengadopsi DevOps, diperkenalkan oleh Jez Humble.
+### **7. Fakta DevOps**
 
-- **Culture**: Budaya kerja kolaboratif, transparan, dan saling percaya antar tim.
-- **Automation**: Automasi proses seperti testing, build, deployment, dan monitoring.
-- **Lean**: Pendekatan ramping, menghindari pemborosan waktu dan sumber daya.
-- **Measurement**: Pengambilan keputusan berbasis data, semua proses diukur dan dievaluasi.
-- **Sharing**: Berbagi informasi, dokumentasi, dan pengetahuan antar tim.
+- Pada tahun 2012, **Amazon** berhasil melakukan **lebih dari 1000 deploy per hari**.
+- Tim yang mengimplementasikan DevOps secara efektif mampu merilis software lebih cepat, dengan kualitas yang lebih tinggi, dan tingkat kegagalan yang lebih rendah.
 
-## Tools DevOps yang Umum Digunakan (Terutama di AWS)
+### **8. Contoh Pertanyaan Evaluasi DevOps**
 
-| Fungsi               | Tool AWS yang digunakan |
-| -------------------- | ----------------------- |
-| Repositori Git       | AWS CodeCommit          |
-| Build aplikasi       | AWS CodeBuild           |
-| Otomatisasi pipeline | AWS CodePipeline        |
-| Deployment aplikasi  | AWS CodeDeploy          |
-| Fungsi serverless    | AWS Lambda              |
-| Pemantauan sistem    | Amazon CloudWatch       |
+Untuk mengukur efektivitas DevOps, berikut beberapa pertanyaan penting (selain aspek finansial individu):
 
-## Pemantauan dan Monitoring
+- Seberapa sering terjadi bug?
+- Seberapa cepat perubahan kode bisa di-deploy?
+- Berapa lama waktu yang dibutuhkan dari commit ke production?
+- Berapa banyak rollback yang terjadi?
 
-Monitoring selama pengembangan dan setelah rilis memberikan banyak manfaat, seperti:
+### **Penutup**
 
-- Memberi kepercayaan diri kepada tim untuk melakukan deploy
-- Memudahkan deteksi error sejak awal
-- Memberikan data objektif untuk perbaikan aplikasi
-- Menjadi dasar dalam pengambilan keputusan teknis
+DevOps bukan hanya tentang tools, tetapi juga tentang **budaya kolaboratif, automasi yang efektif, dan feedback yang cepat**. Implementasi DevOps yang tepat akan meningkatkan produktivitas tim, mempercepat delivery produk, dan memberikan pengalaman yang lebih baik bagi pengguna.
 
-Contoh metrik yang biasa dipantau:
-
-- Waktu respons aplikasi
-- Penggunaan memori dan CPU
-- Frekuensi error
-- Jumlah request per detik
-
-## Penutup
-
-DevOps bukan hanya tentang tools, melainkan tentang **budaya kerja dan otomatisasi** yang terintegrasi. Dengan menerapkan prinsip-prinsip DevOps, tim pengembang dan operasi bisa bekerja lebih cepat, lebih andal, dan lebih percaya diri dalam setiap proses pengembangan aplikasi.
+Catatan ini bisa kamu gunakan kapan saja jika suatu saat lupa tentang dasar-dasar DevOps dan tools yang sering digunakan dalam proses CI/CD dan monitoring modern.
