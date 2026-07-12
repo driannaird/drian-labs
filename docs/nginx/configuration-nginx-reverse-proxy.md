@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /nginx/panduan-configuration-nginx-reverse-proxy
 ---
 
 # Konfigurasi Nginx sebagai Reverse Proxy

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /nginx/panduan-https-dengan-lets-encrypt
 ---
 
 # Konfigurasi HTTPS di Nginx menggunakan Let's Encrypt (Certbot)
