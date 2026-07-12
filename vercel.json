@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "drianlabs.vercel.app"
+        }
+      ],
+      "destination": "https://drianlabs.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/docs/nginx/configuration-nginx-reverse-proxy",
       "destination": "https://drianlabs.com/blog/nginx/konfigurasi-nginx-reverse-proxy",
       "permanent": true
