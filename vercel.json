@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/docs/nginx/configuration-nginx-reverse-proxy",
+      "destination": "https://drianlabs.com/blog/nginx/konfigurasi-nginx-reverse-proxy",
+      "permanent": true
+    },
+    {
+      "source": "/docs/nginx/configuration-nginx-reverse-proxy/",
+      "destination": "https://drianlabs.com/blog/nginx/konfigurasi-nginx-reverse-proxy",
+      "permanent": true
+    },
+    {
+      "source": "/docs/nginx/https-dengan-lets-encrypt",
+      "destination": "https://drianlabs.com/blog/nginx/https-dengan-lets-encrypt",
+      "permanent": true
+    },
+    {
+      "source": "/docs/nginx/https-dengan-lets-encrypt/",
+      "destination": "https://drianlabs.com/blog/nginx/https-dengan-lets-encrypt",
+      "permanent": true
+    }
+  ]
+}
